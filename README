@@ -1,0 +1,27 @@
+color.js is a jquery plugin to allow color operations (darken, lighten, invert, shift hue/saturation/luminance) on page
+elements.  The project began as a tool to apply "heatmap" like coloration to event calendars (days with more events would appear
+"hotter," less eventful days would appear "cooler") based on a json object.  It is also useful for darkening/lightening elements
+that are selected/deselected, inverting the color of items requiring focus, or for dynamically assigning colors to elements while
+maintaining a consistent color pallete
+
+Usage
+
+
+Basic color getter/setter:
+
+	To obtain a color object from an element:
+
+		var calendar_color = $("div.calendar").color
+	
+	To set the color of another object to that of the calendar:
+
+		$(".another_element").color(calendar_color)
+
+
+Color manipulation:
+
+	Color manipulation is done through an API of sorts, whereby
+	a command/operation string and numerical arguments are passed to the
+	colorTransform function 
+
+	$("div.calendar")
