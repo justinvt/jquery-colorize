@@ -19,4 +19,10 @@ Color manipulation:
 	a command/operation string and numerical arguments are passed to the
 	colorTransform function 
 
-	$("div.calendar")
+	$("div.calendar").colorTransform("darken 0.8")
+	
+	$("div.calendar").colorTransform("setHSL 0.8 1.0 0.2")
+	
+Coming soon:
+	
+	A full list of possible operations and useful parameter values.
